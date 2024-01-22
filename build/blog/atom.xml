@@ -2,11 +2,27 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.eiyouwei.net/blog</id>
     <title>大熊课堂Andy Blog</title>
-    <updated>2024-01-21T00:00:00.000Z</updated>
+    <updated>2024-01-22T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://www.eiyouwei.net/blog"/>
     <subtitle>大熊课堂Andy Blog</subtitle>
     <icon>https://www.eiyouwei.net/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[网站部署上线]]></title>
+        <id>https://www.eiyouwei.net/blog/部署</id>
+        <link href="https://www.eiyouwei.net/blog/部署"/>
+        <updated>2024-01-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[本地生成文件]]></summary>
+        <content type="html"><![CDATA[<h3 class="anchor anchorWithStickyNavbar_LWe7" id="本地生成文件">本地生成文件<a href="https://www.eiyouwei.net/blog/%E9%83%A8%E7%BD%B2#%E6%9C%AC%E5%9C%B0%E7%94%9F%E6%88%90%E6%96%87%E4%BB%B6" class="hash-link" aria-label="Direct link to 本地生成文件" title="Direct link to 本地生成文件">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="上传代码">上传代码<a href="https://www.eiyouwei.net/blog/%E9%83%A8%E7%BD%B2#%E4%B8%8A%E4%BC%A0%E4%BB%A3%E7%A0%81" class="hash-link" aria-label="Direct link to 上传代码" title="Direct link to 上传代码">​</a></h3>
+<p>git 上传代码</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="配置nginx">配置nginx<a href="https://www.eiyouwei.net/blog/%E9%83%A8%E7%BD%B2#%E9%85%8D%E7%BD%AEnginx" class="hash-link" aria-label="Direct link to 配置nginx" title="Direct link to 配置nginx">​</a></h3>]]></content>
+        <author>
+            <name>大熊课堂andy老师</name>
+            <uri>https://www.douyin.com/user/MS4wLjABAAAAQp-FPSmnMnNrlUa4rqhQY2_2_Qe5wItA6MVIe2gm3B4</uri>
+        </author>
+        <category label="book" term="book"/>
+    </entry>
     <entry>
         <title type="html"><![CDATA[思周来了]]></title>
         <id>https://www.eiyouwei.net/blog/思周</id>
