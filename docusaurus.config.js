@@ -79,6 +79,7 @@ const config = {
             label: '编程',
           },
           {to: '/blog/tags/book', label: '读书', position: 'right'},
+          {to: '/blog/tags/learning', label: '学习', position: 'right'},
           {to: '/blog/tags/life', label: '生活', position: 'right'},
           {to: '/blog/tags/movie', label: '电影', position: 'right'},
           // {
