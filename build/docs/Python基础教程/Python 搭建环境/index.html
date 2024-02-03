@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Python基础教程/Python 搭建环境" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.1.0">
+<title data-rh="true">Python搭建开发环境 | 大熊课堂Andy</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://www.eiyouwei.net/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://www.eiyouwei.net/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://www.eiyouwei.net/docs/Python基础教程/Python 搭建环境"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Python搭建开发环境 | 大熊课堂Andy"><meta data-rh="true" name="description" content="本节我们来在mac系统和windows系统安装Python开发环境和安Pycharm开发工具。"><meta data-rh="true" property="og:description" content="本节我们来在mac系统和windows系统安装Python开发环境和安Pycharm开发工具。"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://www.eiyouwei.net/docs/Python基础教程/Python 搭建环境"><link data-rh="true" rel="alternate" href="https://www.eiyouwei.net/docs/Python基础教程/Python 搭建环境" hreflang="en"><link data-rh="true" rel="alternate" href="https://www.eiyouwei.net/docs/Python基础教程/Python 搭建环境" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="大熊课堂Andy RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="大熊课堂Andy Atom Feed"><link rel="stylesheet" href="/assets/css/styles.3162bb53.css">
+<script src="/assets/js/runtime~main.ad0de2ec.js" defer="defer"></script>
+<script src="/assets/js/main.5d7b85ac.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/daxiong.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/img/daxiong.png" alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">大熊课堂andy</b></a></div><div class="navbar__items navbar__items--right"><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/category/python基础教程">编程</a><a class="navbar__item navbar__link" href="/blog/tags/book">读书</a><a class="navbar__item navbar__link" href="/blog/tags/learning">学习</a><a class="navbar__item navbar__link" href="/blog/tags/life">生活</a><a class="navbar__item navbar__link" href="/blog/tags/movie">电影</a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" aria-expanded="true" href="/docs/category/python基础教程">Python基础教程</a><button aria-label="Collapse sidebar category &#x27;Python基础教程&#x27;" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 简介">Python简介</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/Python基础教程/Python 搭建环境">Python搭建开发环境</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 程序运行">Python程序是怎样运行的？</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 中英文符号">中英文符号，你傻傻的分不清楚</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 注释原则">Python的注释</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 变量">Python 变量</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python的关键字">Python的关键字</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 输入输出">Python 输入输出</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 运算符">Python 运算符</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python if判断语句">Python if判断语句</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 循环语句">Python 循环语句</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 字符串">Python 字符串</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 列表">Python 列表</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 元组">Python 元组</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 字典">Python 字典</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/Python基础教程/Python 集合">Python 集合</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/category/django基础教程">Django基础教程</a><button aria-label="Expand sidebar category &#x27;Django基础教程&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" aria-expanded="false" href="/docs/category/djangovue开发电影项目">Django+Vue开发电影项目</a><button aria-label="Expand sidebar category &#x27;Django+Vue开发电影项目&#x27;" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/Flask项目:网易云  课堂课程分析/设计数据表">Flask项目:网易云课堂课程分析</a></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/docs/category/python基础教程"><span itemprop="name">Python基础教程</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Python搭建开发环境</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><h1>Python搭建开发环境</h1>
+<p>本节我们来在mac系统和windows系统安装Python开发环境和安装Pycharm开发工具。</p>
+<h1>Win10系统下载安装Python3.9</h1>
+<p>本节我们将向大家介绍如何在Win10系统安装 Python3.9 开发环境。Python 3.9使用了一个新的解析器，我们将在Python 3.10及更高版本中开始使用这种灵活性。</p>
+<p>下载安装Python3.9环境</p>
+<p>打开Python 官网：<a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">https://www.python.org/</a>
+首先把鼠标悬浮在Downloads按钮上，其次点击Windows按钮如下</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/python3.9windows%E7%89%88%E6%9C%AC.jpg" alt="python3.9windows版本" class="img_ev3q">
+进入到下载页面，我们找到Python 64位安装文件，点击下载，如下图所示</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/%E4%B8%8B%E8%BD%BDPython64%E4%BD%8D%E6%96%87%E4%BB%B6.jpg" alt="下载Python64位文件" class="img_ev3q">
+双击我们下载好的Python64位文件，在点击运行开始安装Python</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/%E5%AE%89%E8%A3%85Python.jpg" alt="安装Python" class="img_ev3q">
+在弹出的界面窗口，<strong>勾选Add Python to Path</strong>，<strong>勾选Add Python to Path</strong>，<strong>勾选Add Python to Path</strong>重要的事情说3遍</p>
+<p>勾选完成以后，单击用户自定义安装</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/Python3.9%E9%80%89%E9%A1%B9%E4%BB%8B%E7%BB%8D.jpg" alt="Python3.9选项介绍" class="img_ev3q">
+在弹出的界面中，我们直接单击next按钮，如下图所示</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/next.jpg" alt="next" class="img_ev3q">
+在弹出的界面中，我们单击Browse按钮，改变我们的安装路径</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/%E6%94%B9%E5%8F%98Python%E5%AE%89%E8%A3%85%E4%BD%8D%E7%BD%AE.jpg" alt="改变Python安装位置" class="img_ev3q">
+笔者这里选择F盘，小伙伴可以随意选择，接下来单击左下角的新建文件夹，命名为Python3.9，最后一步单击“确定按钮”。</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/%E6%96%B0%E5%BB%BAPython3.9.jpg" alt="新建Python3.9" class="img_ev3q">
+在弹出的窗口，单击intall按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/%E5%8D%95%E5%87%BBintall%E6%8C%89%E9%92%AE.jpg" alt="单击intall按钮" class="img_ev3q">
+安装中，直到弹出下面的窗口，说明小伙伴们的Python3.9已经安装成功了</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/Python3.9%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F.jpg" alt="Python3.9安装成功" class="img_ev3q"></p>
+<p>-Win10检查Python3.9是否安装成功</p>
+<p>首先单击屏幕左下角的放大镜图标，在弹出的搜索栏中输入cmd，单击命令行提示符，如下图所示</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/%E5%8D%95%E5%87%BB%E6%90%9C%E7%B4%A2%E6%8C%89%E9%92%AE.jpg" alt="单击搜索按钮" class="img_ev3q">
+在弹出的窗口中，输入python，敲击回车键，如果小伙伴们出现的问题和下图一样，那么恭喜你，你的Python安装已经成功了！</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/%E6%A3%80%E6%B5%8B%E5%AE%89%E8%A3%85Python.jpg" alt="检测安装Python" class="img_ev3q"></p>
+<h1>macOS系统下载安装Python3.9</h1>
+<p>本节我们将向大家介绍如何在macOS系统安装 Python3.9 开发环境。在macOS系统安装Python非常简单，</p>
+<p>-下载安装Python3.9环境</p>
+<p>打开Python 官网：<a href="https://www.python.org/" target="_blank" rel="noopener noreferrer">https://www.python.org/</a>
+首先把鼠标悬浮在Downloads按钮上，其次点击Python3.9.2按钮，下载Python开发环境如下图：</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/01%E4%B8%8B%E8%BD%BDPython3.9.2.jpg" alt="01下载Python3.9.2" class="img_ev3q">
+找到下载好的Python3.9.2，双击打卡它</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/02%E4%B8%8B%E8%BD%BD%E5%A5%BD%E7%9A%84Python.jpg" alt="02下载好的Python" class="img_ev3q">
+接下来进入傻瓜式操作，在弹出的窗口中单击继续按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/03%E5%AE%89python.jpg" alt="03安python" class="img_ev3q">
+在弹出的新的窗口中单击继续按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/04%E7%BB%A7%E7%BB%AD.jpg" alt="04继续" class="img_ev3q">
+在新的窗口中单击继续按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/05%E7%BB%A7%E7%BB%AD.jpg" alt="05继续" class="img_ev3q">
+在弹出的新的窗口中单击同意按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/06%E5%90%8C%E6%84%8F.jpg" alt="06同意" class="img_ev3q">
+在弹出的新的窗口中单击安装按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/07%E5%AE%89%E8%A3%85.jpg" alt="07安装" class="img_ev3q">
+在弹出的新的窗口中先输入我们mac系统中设定的密码，然后单击安装软件</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/08%E8%BE%93%E5%85%A5%E5%AF%86%E7%A0%81.jpg" alt="08输入密码" class="img_ev3q">
+等待一小会，会弹出安装成功的界面，如下图所示</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/09%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F%E7%95%8C%E9%9D%A2.jpg" alt="09安装成功界面" class="img_ev3q"></p>
+<p>-mac检查Python3.9是否安装成功</p>
+<p>我们按住command+空格键，在搜索栏中输入terminal，进入终端</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/10%E8%BF%9B%E5%85%A5mac%E7%BB%88%E7%AB%AF.jpg" alt="10进入mac终端" class="img_ev3q">
+在弹出的界面输入python3.9， 敲击回车键，如果安装成功，会弹出下面的提示文字。</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/11%E8%BE%93%E5%85%A5python3.9.jpg" alt="11输入python3.9" class="img_ev3q"></p>
+<h1>Win10下载安装Pycharm</h1>
+<p>本节我们将向大家介绍如何在Win10系统下载安装 Pycharm。PyCharm是一种Python 编辑器，它是众多Python编辑器中比较好的一个。而且可以跨平台，在macos和Windows系统中都可以用。</p>
+<p>-下载安装Pycharm</p>
+<p>Window版Pycharm 下载链接：<a href="https://www.jetbrains.com/pycharm/download/#section=windows" target="_blank" rel="noopener noreferrer">https://www.jetbrains.com/pycharm/download/#section=windows</a>
+首先鼠标单击上面的链接，跳转页面如下</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/01win10Pycharm%E4%B8%8B%E8%BD%BD%E7%95%8C%E9%9D%A2.png" alt="01win10Pycharm下载界面" class="img_ev3q">
+选择windows选项卡，选择Pycharm社区版，单击下载按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/02%E4%B8%8B%E8%BD%BDPycharm.png" alt="02下载Pycharm" class="img_ev3q">
+找到我们下载到本地磁盘的Pycharm，双击它，在弹出的窗口单击运行按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/03%E5%AE%89%E8%A3%85Pycharm.png" alt="03安装Pycharm" class="img_ev3q">
+在弹出的窗口单击Next按钮
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/04%E5%8D%95%E5%87%BBnext.png" alt="04单击next" class="img_ev3q">
+在弹出的窗口单击Browse按钮，选择自己喜欢的安装路径，然后单击Next按钮
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/05%E6%9B%B4%E6%94%B9%E8%B7%AF%E5%BE%84.png" alt="05更改路径" class="img_ev3q">
+在弹出的窗口把能勾选的位置<strong>全部勾选上</strong>，然后单击Next按钮
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/06%E5%85%A8%E9%83%A8%E5%8B%BE%E9%80%89%E4%B8%8A.png" alt="06全部勾选上" class="img_ev3q">
+在弹出的窗口单击Install按钮
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/07%E5%8D%95%E5%87%BBinstall.png" alt="07单击install" class="img_ev3q">
+在弹出的窗口选择第二个：稍后重启，单击Finish按钮
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/08%E5%8D%95%E5%87%BBFinish.jpg" alt="08单击Finish" class="img_ev3q">
+回到我们的桌面，找到Pycharm生成的快捷方式，双击它
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/09%E5%8F%8C%E5%87%BB%E5%B7%A6%E9%9D%A2%E5%BF%AB%E6%8D%B7%E6%96%B9%E5%BC%8F.jpg" alt="09双击左面快捷方式" class="img_ev3q">
+在弹出的窗口，勾选同意协议，单击Continue按钮
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/10%E5%8D%95%E5%87%BBcontinue.jpg" alt="10单击continue" class="img_ev3q">
+在弹出的窗口，选择不发送数据，单击Don&#x27;t send
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/11donotsend.jpg" alt="11donotsend" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pycharm创建项目及文件">Pycharm创建项目及文件<a href="#pycharm创建项目及文件" class="hash-link" aria-label="Direct link to Pycharm创建项目及文件" title="Direct link to Pycharm创建项目及文件">​</a></h3>
+<p>在弹出的窗口中，选择创建新的项目
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/12%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E9%A1%B9%E7%9B%AE.jpg" alt="12创建一个新项目" class="img_ev3q">
+在弹出的窗口中，更改创建项目的位置，然后单击Create按钮来创建我们的第一个项目
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/13%E6%9B%B4%E6%94%B9%E9%A1%B9%E7%9B%AE%E4%BD%8D%E7%BD%AE.jpg" alt="13更改项目位置" class="img_ev3q">
+在弹出的窗口中，鼠标悬浮到studyPython上，然后右键选择new，选择Directory来创建一个文件夹
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/14%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.jpg" alt="14创建文件夹" class="img_ev3q">
+在弹出的窗口中输入文件夹的名称，单击OK按钮
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/15%E5%88%9B%E5%BB%BAchapter1%E6%96%87%E4%BB%B6%E5%A4%B9.jpg" alt="15创建chapter1文件夹" class="img_ev3q">
+把鼠标移动到左侧树状目录的chapter1上，然后右键选择new，选择Python file来创建一个Python文件
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/16%E5%88%9B%E5%BB%BAPython%E6%96%87%E4%BB%B6.jpg" alt="16创建Python文件" class="img_ev3q">
+在弹出的窗口中输入Python文件的名称，单击OK按钮
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/17%E8%BE%93%E5%85%A5%E6%96%87%E4%BB%B6%E5%90%8D%E7%A7%B0.jpg" alt="17输入文件名称" class="img_ev3q">
+下面展示Pycharm编辑的主要的两个窗口
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/18Pycharm%E7%95%8C%E9%9D%A2%E7%AA%97%E5%8F%A3.jpg" alt="18Pycharm界面窗口" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="运行python文件">运行Python文件<a href="#运行python文件" class="hash-link" aria-label="Direct link to 运行Python文件" title="Direct link to 运行Python文件">​</a></h3>
+<p>在编辑代码空白区单击右键，在弹出的窗口中选择run‘hello’.py来运行Python文件
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/19%E8%BF%90%E8%A1%8CPython%E6%96%87%E4%BB%B6.jpg" alt="19运行Python文件" class="img_ev3q">
+运行结果如下图</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/20%E8%BF%90%E8%A1%8C%E7%BB%93%E6%9E%9C.jpg" alt="20运行结果" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置pycharm字体">设置Pycharm字体<a href="#设置pycharm字体" class="hash-link" aria-label="Direct link to 设置Pycharm字体" title="Direct link to 设置Pycharm字体">​</a></h3>
+<p>第一次打开Pycharm，代码默认字体会很小，为了保护我们的视力，我们先来调整一下代码字体的大小，首先我单击菜单栏的file按钮，找到设置settings，单击settings，
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/21%E6%9B%B4%E6%94%B9%E5%AD%97%E4%BD%93file.jpg" alt="21更改字体file" class="img_ev3q">
+在弹出的窗口中展开Editor，单击下面的Font按钮，选择自己喜欢的字体和字体的大小，然后在单击Apply，最后在单击OK，这样我们的字体就设置成功了</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/22%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE.jpg" alt="22字体设置" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置pycharm主题">设置Pycharm主题<a href="#设置pycharm主题" class="hash-link" aria-label="Direct link to 设置Pycharm主题" title="Direct link to 设置Pycharm主题">​</a></h3>
+<p>首先我单击菜单栏的file按钮，找到设置settings，单击settings</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/23%E6%9B%B4%E6%94%B9%E5%AD%97%E4%BD%93file.jpg" alt="23更改字体file" class="img_ev3q">
+在弹出的窗口中展开Editor，展开Color Scheme，单击下面的genral按钮，在右侧选择自己喜欢的主题，然后在单击Apply，最后在单击OK，这样我们的Pycharm主题就设置成功了</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/24.%E9%80%89%E6%8B%A9Pycharm%E4%B8%BB%E9%A2%98.jpg" alt="24.选择Pycharm主题" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="更改python解释器">更改Python解释器<a href="#更改python解释器" class="hash-link" aria-label="Direct link to 更改Python解释器" title="Direct link to 更改Python解释器">​</a></h3>
+<p>本节我们来介绍一下把创建的Python虚拟环境设置成本地系统环境。首先我单击菜单栏的file按钮，找到设置settings，单击settings</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/25file%E7%9A%84%E5%89%AF%E6%9C%AC.jpg" alt="25file的副本" class="img_ev3q">
+在弹出的窗口中展开Project：StudyPython，单击Project Interpreter
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/26%E9%A1%B9%E7%9B%AE%E8%A7%A3%E9%87%8A%E5%99%A8.jpg" alt="26项目解释器" class="img_ev3q">
+在右侧的面板中，我们单击右上角的三角号，在下拉菜单中单击Show All按钮
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/27showall.jpg" alt="27showall" class="img_ev3q">
+在弹出的窗口中我们单击右侧的+号
+![28单击+号](/Users/liuyang/Desktop/Python学习笔记/02 Python 搭建环境/04Windows安装Pycharm/压缩后/28单击+号.jpg)
+在弹出的窗口中我们选择系统解释器，解释器路径为我们安装Python的路径
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/29%E9%80%89%E6%8B%A9%E7%B3%BB%E7%BB%9F%E8%A7%A3%E9%87%8A%E5%99%A8.jpg" alt="29选择系统解释器" class="img_ev3q">
+在弹出的窗口中单击OK按钮
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/30%E7%82%B9%E5%87%BBOK.jpg" alt="30点击OK" class="img_ev3q">
+在弹出的窗口中单击Apply按钮，然后单击OK按钮，这样我们就把Python虚拟环境设置成本地系统环境了
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/31%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83.jpg" alt="31应用系统环境" class="img_ev3q"></p>
+<h1>macOS下载安装Pycharm</h1>
+<p>本节我们将向大家介绍如何在macOS系统下载安装 Pycharm。PyCharm是一种Python 编辑器，它是众多Python编辑器中比较好的一个。而且可以跨平台，在macos和Windows系统中都可以用。</p>
+<p>下载Pycharm
+打开Pycharm 官网：<a href="https://www.jetbrains.com/pycharm/" target="_blank" rel="noopener noreferrer">https://www.jetbrains.com/pycharm/</a>
+鼠标单击右上角的Downloads按钮，跳转页面如下</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/01%E6%89%93%E5%BC%80Pycharm%E7%9A%84%E5%AE%98%E7%BD%91.png" alt="01打开Pycharm的官网" class="img_ev3q"></p>
+<p>选择macOS选项卡，选择Pycharm社区版，单击下载按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/02%E9%80%89%E6%8B%A9%E7%A4%BE%E5%8C%BA%E7%89%88%E4%B8%8B%E8%BD%BD.png" alt="02选择社区版下载" class="img_ev3q">
+找到我们下载到本地磁盘的Pycharm，双击它，在弹出的窗口单击运行按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/03%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80%E5%AE%89%E8%A3%85%E5%8C%85.png" alt="03双击打开安装包" class="img_ev3q"></p>
+<p>在弹出的窗口中把PycharmCE图标拖动到文件夹中</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/04%E6%8B%96%E5%8A%A8%E5%88%B0%E6%96%87%E4%BB%B6%E4%B8%AD.png" alt="04拖动到文件中" class="img_ev3q"></p>
+<p>回到mac桌面，找到Pycharmce快捷方式，鼠标双击它</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/05%E5%8F%8C%E5%87%BBPycharm.jpg" alt="05双击Pycharm" class="img_ev3q"></p>
+<p>第一次打开Pycharm，在弹出的对话框中，选择不导入设置，单击OK按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/06%E4%B8%8D%E5%AF%BC%E5%85%A5%E8%AE%BE%E7%BD%AE.jpg" alt="06不导入设置" class="img_ev3q"></p>
+<p>在弹出的窗口，勾选同意协议，单击Continue按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/07%E5%8B%BE%E9%80%89%E7%A1%AE%E8%AE%A4%E5%8D%8F%E8%AE%AE.jpg" alt="07勾选确认协议" class="img_ev3q"></p>
+<p>在弹出的窗口，选择不发送数据，单击Don&#x27;t send</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/08%E4%B8%8D%E5%8F%91%E9%80%81.jpg" alt="08不发送" class="img_ev3q"></p>
+<p>在弹出的窗口中，选择我没有使用过Pycharm，然后选择左下角的按钮：设置为默认</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/09%E8%AE%BE%E7%BD%AE%E4%B8%BA%E9%BB%98%E8%AE%A4.jpg" alt="09设置为默认" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="pycharm创建项目及文件-1">Pycharm创建项目及文件<a href="#pycharm创建项目及文件-1" class="hash-link" aria-label="Direct link to Pycharm创建项目及文件" title="Direct link to Pycharm创建项目及文件">​</a></h3>
+<p>在弹出的窗口中，选择创建新的项目</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/10%E5%88%9B%E5%BB%BA%E4%B8%80%E4%B8%AA%E6%96%B0%E9%A1%B9%E7%9B%AE.jpg" alt="10创建一个新项目" class="img_ev3q">
+在弹出的窗口中，更改创建项目的名称，然后单击Create按钮来创建我们的第一个项目</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/11%E5%A1%AB%E5%86%99%E9%A1%B9%E7%9B%AE%E5%90%8D%E7%A7%B0.jpg" alt="11填写项目名称" class="img_ev3q"></p>
+<p>在弹出的窗口中，鼠标悬浮到studyPython上，然后右键选择new，选择Directory来创建一个文件夹</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/12%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9.jpg" alt="12创建文件夹" class="img_ev3q">
+在弹出的窗口中输入文件夹的名称，单击OK按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/13%E8%BE%93%E5%85%A5%E5%90%8D%E5%AD%97.jpg" alt="13输入名字" class="img_ev3q">
+把鼠标移动到左侧树状目录的chapter1上，然后右键选择new，选择Python file来创建一个Python文件</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/14%E5%88%9B%E5%BB%BAPython%E6%96%87%E4%BB%B6.jpg" alt="14创建Python文件" class="img_ev3q">
+在弹出的窗口中输入Python文件的名称，单击OK按钮</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/15%E8%BE%93%E5%85%A5Python%E5%90%8D%E5%AD%97.jpg" alt="15输入Python名字" class="img_ev3q">)
+下面展示Pycharm编辑的主要的两个窗口
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/18Pycharm%E7%95%8C%E9%9D%A2%E7%AA%97%E5%8F%A3.jpg" alt="18Pycharm界面窗口" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="运行python文件-1">运行Python文件<a href="#运行python文件-1" class="hash-link" aria-label="Direct link to 运行Python文件" title="Direct link to 运行Python文件">​</a></h3>
+<p>在编辑代码空白区单击右键，在弹出的窗口中选择run‘hello’.py来运行Python文件</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/19%E8%BF%90%E8%A1%8CPython%E6%96%87%E4%BB%B6.jpg" alt="19运行Python文件" class="img_ev3q">
+运行结果如下图</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/17%E8%BE%93%E5%87%BA%E7%BB%93%E6%9E%9C.jpg" alt="17输出结果" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置pycharm字体-1">设置Pycharm字体<a href="#设置pycharm字体-1" class="hash-link" aria-label="Direct link to 设置Pycharm  字体" title="Direct link to 设置Pycharm字体">​</a></h3>
+<p>第一次打开Pycharm，代码默认字体会很小，为了保护我们的视力，我们先来调整一下代码字体的大小，首先我单击菜单栏的Pycharm按钮，单击Preferences。</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/18%E5%8D%95%E5%87%BBPrefernce.jpg" alt="18单击Prefernce" class="img_ev3q"></p>
+<p>在弹出的窗口中展开Editor，单击下面的Font按钮，选择自己喜欢的字体和字体的大小，然后在单击Apply，最后在单击OK，这样我们的字体就设置成功了</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/19%E5%AD%97%E4%BD%93%E8%AE%BE%E7%BD%AE.jpg" alt="19字体设置" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="设置pycharm主题-1">设置Pycharm主题<a href="#设置pycharm主题-1" class="hash-link" aria-label="Direct link to 设置Pycharm主题" title="Direct link to 设置Pycharm主题">​</a></h3>
+<p>首先我单击菜单栏的Pycharm按钮，单击Preferences。</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/18%E5%8D%95%E5%87%BBPrefernce.jpg" alt="" class="img_ev3q"></p>
+<p>在弹出的窗口中展开Editor，展开Color Scheme，单击下面的genral按钮，在右侧选择自己喜欢的主题，然后在单击Apply，最后在单击OK，这样我们的Pycharm主题就设置成功了</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/24.%E9%80%89%E6%8B%A9Pycharm%E4%B8%BB%E9%A2%98.jpg" alt="24.选择Pycharm主题" class="img_ev3q"></p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="更改python解释器-1">更改Python解释器<a href="#更改python解释器-1" class="hash-link" aria-label="Direct link to 更改Python解释器" title="Direct link to 更改Python解释器">​</a></h3>
+<p>本节我们来介绍一下把创建的Python虚拟环境设置成本地系统环境。首先我单击菜单栏的Pycharm按钮，单击Preferences。</p>
+<p><img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/18%E5%8D%95%E5%87%BBPrefernce.jpg" alt="18单击Prefernce" class="img_ev3q">
+在弹出的窗口中展开Project：StudyPython，单击Project Interpreter
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/26%E9%A1%B9%E7%9B%AE%E8%A7%A3%E9%87%8A%E5%99%A8.jpg" alt="26项目解释器" class="img_ev3q">
+在右侧的面板中，我们单击右上角的三角号，在下拉菜单中单击Show All按钮
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/27showall.jpg" alt="27showall" class="img_ev3q">
+在弹出的窗口中我们单击右侧的+号
+![28单击+号](/Users/liuyang/Desktop/Python学习笔记/02 Python 搭建环境/04Windows安装Pycharm/压缩后/28单击+号.jpg)
+在弹出的窗口中我们选择系统解释器，解释器路径为我们安装Python的路径
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/29%E9%80%89%E6%8B%A9%E7%B3%BB%E7%BB%9F%E8%A7%A3%E9%87%8A%E5%99%A8.jpg" alt="29选择系统解释器" class="img_ev3q">
+在弹出的窗口中单击OK按钮
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/30%E7%82%B9%E5%87%BBOK.jpg" alt="30点击OK" class="img_ev3q">
+在弹出的窗口中单击Apply按钮，然后单击OK按钮，这样我们就把Python虚拟环境设置成本地系统环境了
+<img loading="lazy" src="https://daxiongketang-srt.oss-cn-beijing.aliyuncs.com/notes/31%E5%BA%94%E7%94%A8%E7%B3%BB%E7%BB%9F%E7%8E%AF%E5%A2%83.jpg" alt="31应用系统环境" class="img_ev3q"></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/Python基础教程/Python 简介"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Python简介</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/docs/Python基础教程/Python 程序运行"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Python程序是怎样运行的？</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#pycharm创建项目及文件" class="table-of-contents__link toc-highlight">Pycharm创建项目及文件</a></li><li><a href="#运行python文件" class="table-of-contents__link toc-highlight">运行Python文件</a></li><li><a href="#设置pycharm字体" class="table-of-contents__link toc-highlight">设置Pycharm字体</a></li><li><a href="#设置pycharm主题" class="table-of-contents__link toc-highlight">设置Pycharm主题</a></li><li><a href="#更改python解释器" class="table-of-contents__link toc-highlight">更改Python解释器</a></li><li><a href="#pycharm创建项目及文件-1" class="table-of-contents__link toc-highlight">Pycharm创建项目及文件</a></li><li><a href="#运行python文件-1" class="table-of-contents__link toc-highlight">运行Python文件</a></li><li><a href="#设置pycharm字体-1" class="table-of-contents__link toc-highlight">设置Pycharm字体</a></li><li><a href="#设置pycharm主题-1" class="table-of-contents__link toc-highlight">设置Pycharm主题</a></li><li><a href="#更改python解释器-1" class="table-of-contents__link toc-highlight">更改Python解释器</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2024 www.eiyouwei.net 吉ICP备14006419号-1</div></div></div></footer></div>
+</body>
+</html>
